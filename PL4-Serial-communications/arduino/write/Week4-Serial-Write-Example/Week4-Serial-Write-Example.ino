@@ -31,10 +31,10 @@ void loop() {
   Serial.println("1: Hello world!");
   
   // concat strings to sent to serial port
-  Serial.println((String)"2: " + "Hello world!");
+  Serial.println("2: " + "Hello world!");
 
   // concat various type of data into string and sent to serial port
-  Serial.println((String)3 + ": Hello world!");
+  Serial.println(String(3) + ": Hello world!");
 
   // print() is the simplest version, without CR+LF 
   String w = "world!";
