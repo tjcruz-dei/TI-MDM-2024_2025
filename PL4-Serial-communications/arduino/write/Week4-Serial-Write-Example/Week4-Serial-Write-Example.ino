@@ -21,26 +21,5 @@ void setup() {
 }
 
 void loop() {
-  // prints value unaltered, i.e. the raw binary version of the byte.
-  // The Serial Monitor interprets all bytes as ASCII, so 33, the first number,
-  // will show up as '!'
-  // Serial.write (33);
-  
-  // Prints data to the serial port as human-readable ASCII text.
-  // println() sends values as strings, terminating with CR+LF
-  Serial.println("1: Hello world!");
-  
-  // concat strings to sent to serial port
-  Serial.println("2: " + "Hello world!");
-
-  // concat various type of data into string and sent to serial port
-  Serial.println(String(3) + ": Hello world!");
-
-  // print() is the simplest version, without CR+LF 
-  String w = "world!";
-  Serial.print (4);
-  Serial.print (": Hello ");
-  Serial.println (w);  
-
-  delay(500);
+  Serial.println("123");
 }
