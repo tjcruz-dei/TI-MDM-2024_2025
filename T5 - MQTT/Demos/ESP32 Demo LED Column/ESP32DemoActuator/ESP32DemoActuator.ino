@@ -13,9 +13,6 @@ String ID_MQTT;
 char *letters = "abcdefghijklmnopqrstuvwxyz0123456789";
 
 // Wi-Fi settings
-//const char *SSID = "IoT-Test";
-//const char *PASSWORD = "Denohd0dkooz8Oir";
-
 const char *SSID = "iMinion 15";
 const char *PASSWORD = "cerealkiller";
 
