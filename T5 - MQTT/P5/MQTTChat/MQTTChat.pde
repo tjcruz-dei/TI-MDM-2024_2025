@@ -24,7 +24,7 @@ void setup() {
   client = new MQTTClient(this);
   //client.connect("mqtt://public:public@public.cloud.shiftr.io",ID);
   client.connect("mqtt://broker.emqx.io",ID);
-  client.subscribe("/TI/chatchannel");
+  client.subscribe("TI/chatchannel");
 
   cp5 = new ControlP5(this);
   
@@ -55,7 +55,7 @@ void messageReceived(String topic, byte[] payload) {
 
 public void Message(String theText) {
   // automatically receives results from controller input
-  client.publish("/TI/chatchannel", Username+":"+theText);
+  client.publish("TI/chatchannel", Username+":"+theText);
 }
 
 void draw() {

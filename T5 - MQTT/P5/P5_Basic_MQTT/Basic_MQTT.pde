@@ -11,13 +11,13 @@ void setup() {
   //example for broker with no auth required
   client.connect("mqtt://broker.emqx.io",ID+String.valueOf(System.currentTimeMillis()));
  
-  client.subscribe("/example");
+  client.subscribe("exampleXPTO");
 }
 
 void draw() {}
 
 void keyPressed() {
-  client.publish("/hello", "world");
+  client.publish("helloXPTO", "world");
 }
 
 void messageReceived(String topic, byte[] payload) {
