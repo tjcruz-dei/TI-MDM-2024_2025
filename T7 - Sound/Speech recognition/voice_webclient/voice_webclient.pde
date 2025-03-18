@@ -23,5 +23,5 @@ void draw() {
 
 void webSocketServerEvent(String msg){
  println(msg);
- if (msg.contains("hello")) println("Yay!");
+ if (msg.contains("Hello")) println("Yay!");
 }
