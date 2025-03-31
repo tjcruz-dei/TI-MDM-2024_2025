@@ -15,6 +15,7 @@ void setup() {
 }
 
 void draw(){
+  //If you want to limit the cursor within the wiewport limits
   turtle.x = constrain (turtle.x, 0, width);
   turtle.y = constrain (turtle.y, 0, height);
   ellipse(turtle.x,turtle.y,10,10); 
