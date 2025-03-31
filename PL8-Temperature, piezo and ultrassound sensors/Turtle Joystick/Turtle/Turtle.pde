@@ -15,6 +15,8 @@ void setup() {
 }
 
 void draw(){
+  turtle.x = constrain (turtle.x, 0, width);
+  turtle.y = constrain (turtle.y, 0, height);
   ellipse(turtle.x,turtle.y,10,10); 
 }
 
@@ -24,7 +26,7 @@ void serialEvent( Serial myPort) {
   
   try{
     val = myPort.readString();
-    println(val);
+    //println(val);
     
     if (val!=null)
      SP=split(val.strip(),':');
