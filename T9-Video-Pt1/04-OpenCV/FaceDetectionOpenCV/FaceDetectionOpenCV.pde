@@ -1,5 +1,5 @@
 /**
- * Tecnologias de Interface, 2024
+ * Tecnologias de Interface, 2025
  * Universidade de Coimbra
  * MSc in Design and Multimedia
  *
