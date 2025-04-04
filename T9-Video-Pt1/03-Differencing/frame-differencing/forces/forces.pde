@@ -41,14 +41,14 @@ void draw() {
 
     grid.update(dif);
     
-    // get active positions
-    ArrayList <PVector> activePos = grid.getActivePos();
-    for (PVector vec : activePos) {
-      // Force of the movement saved in the z position of the vector
-      fill(255,255,0, map(vec.z, 0, 100, 0, 255));
-      // middle position of the cell
-      ellipse(vec.x, vec.y, 10, 10);
-    }
+    //// get active positions
+    //ArrayList <PVector> activePos = grid.getActivePos();
+    //for (PVector vec : activePos) {
+    //  // Force of the movement saved in the z position of the vector
+    //  fill(255,255,0, map(vec.z, 0, 100, 0, 255));
+    //  // middle position of the cell
+    //  ellipse(vec.x, vec.y, 10, 10);
+    //}
 
     image(dif, 0, 0);
   }
