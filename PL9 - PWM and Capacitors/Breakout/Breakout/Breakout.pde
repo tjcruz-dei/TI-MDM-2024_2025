@@ -39,7 +39,7 @@ void setup()
   BRICK_HEIGHT=(height/3)/NUM_ROWS;
   ding = new SoundFile(this,"ding.mp3");
   
-  String portName = Serial.list()[0]; //change to match your port
+  String portName = Serial.list()[3]; //change to match your port
   myPort = new Serial(this, portName, 9600); 
   myPort.bufferUntil('\n');
   myPort.clear();
