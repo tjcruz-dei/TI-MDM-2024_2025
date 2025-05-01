@@ -56,11 +56,10 @@ void setup() {
 
     Serial.print(F("Ready to receive IR signals at pin "));
     Serial.println(IR_RECEIVE_PIN);
-    pinMode(3,OUTPUT);
-    pinMode(4,OUTPUT);
-    digitalWrite(3,HIGH);
-    
-    digitalWrite(4,LOW);
+    //pinMode(3,OUTPUT);
+    //pinMode(4,OUTPUT);
+    //digitalWrite(3,HIGH);
+    //digitalWrite(4,LOW);
 }
 
 void loop() {
